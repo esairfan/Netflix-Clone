@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Assests/images/Headernetflixbackground.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .box {
+    height: 75vh;
+    width: 100%;
+    opacity: 0.7; 
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+    justify-content: space-between;
+    height: 82px;
+    max-width: 60vw; 
+}
+
+nav span img {
+    width: 9.25rem;
+    height: 2.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.flex button {
+    height: 4vh;
+    width: 8vh; 
+}
+
+.btn {
+    background-color: #E50914;
+    position: relative;
+    z-index: 10;
+    color: aliceblue;
+    border-radius: 10%;
+    padding: 3px 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a60610;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 30px;
+    padding: 0 23px; 
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-buttons button {
+    height: 5vh;
+    width: 20vh;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: 'Martel Sans', sans-serif;
+    padding: 3px 24px;
+}
+
+.main input {
+    padding: 7px 80px 8px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(55, 54, 54);
+}
+
+.firstsection, .secondsection, .thirdsection, .fourthsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: aliceblue;
+    font-family: 'Martel Sans', sans-serif;
+    padding-bottom: 50px;
+}
+
+.firstsection .image, .secondsection .image, .thirdsection .image, .fourthsection .image {
+    position: relative;
+}
+
+.firstsection .image img, .secondsection .image img, .thirdsection .image img, .fourthsection .image img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.firstsection .image video, .thirdsection .image video {
+    position: absolute;
+    top: 85px;
+    right: 0;
+}
+
+.firstsection .text, .secondsection .text, .thirdsection .text, .fourthsection .text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.firstsection .text h1, .secondsection .text h1, .thirdsection .text h1, .fourthsection .text h1 {
+    font-size: 48px;
+}
+
+.firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p {
+    font-size: 24px;
+    max-width: 30vw;
+}
+
+.faqs {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 1600;
+}
+
+.faq {
+    background-color: #333;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.faq:hover {
+    background-color: #666262;
+}
+
+.faq-question span {
+    font-size: 24px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #444;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 30px;
+    padding: 0 23px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.email p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.email input {
+    padding: 7px 80px 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer a {
+    color: rgb(161, 159, 159);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .question {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer .selectbox {
+    background-color: transparent;
+    color: rgb(138, 136, 136);
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+footer .webend {
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        padding-top: 0px;
+    }
+    nav span img {
+        width: 7.25rem;
+        height: 1.5rem;
+         
+    }
+    .firstsection, .secondsection, .thirdsection, .fourthsection {
+        flex-direction: column;
+    }
+    .hero h1 ,.firstsection .text h1, .secondsection .text h1, .thirdsection .text h1, .fourthsection .text h1 , .faqs h1 ,.toggle-btn{
+        font-size: 35px;
+        font-weight: 900;
+    }
+    .hero h3, .firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p ,.faqs p ,.faq-question span{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center; 
+         
+    }
+    
+    .firstsection, .secondsection, .thirdsection, .fourthsection {
+        flex-direction: column;
+    }
+    
+    .firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p {
+        max-width: 120vw;
+    }
+    .hero p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .hero-buttons button {
+        font-size: 16px;
+    }
+    .faq-answer { 
+        padding: 5px; 
+        gap: 3px;
+        font-size: 16px
+    }
+    .footer { 
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav span img {
+        width: 7rem;
+        height: 2rem;
+    }
+    .hero h1,.firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p ,.faqs h1,.toggle-btn{
+        font-size: 30px;
+    }
+    .flex button { 
+        font-size: 12px
+    }
+    .firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p {
+        max-width: 80vw;
+    }
+    .hero h3,.firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p ,.faqs p,.faq-question span{
+        font-size: 18px;
+    }
+      
+    .hero p {
+        font-size: 16px;
+    }
+    .hero-buttons button {
+        font-size: 14px;
+    }
+    
+    .secondsection .image img,  .fourthsection .image img {
+        width: 100%;   
+    }
+    .firstsection .image img,  .thirdsection .image img {
+        position: relative;     
+        width: 300px;
+        height: 200px; 
+    }
+    
+    .firstsection .image video, .thirdsection .image video {
+        position: absolute;
+        top: 28px;
+        right: 0;
+        width: 290px;
+        height: 130px;
+      }
+    .firstsection .text p, .secondsection .text p, .thirdsection .text p, .fourthsection .text p {
+        max-width: 100%;
+    }
+    .faqs {
+        width: 90%;
+    }
+    
+.email input { 
+    font-size: 10px; 
+}
+}
